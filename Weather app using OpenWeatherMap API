@@ -2,7 +2,7 @@ import requests as r
 import pyttsx3
 e=pyttsx3.init()
 c=input("enter city name:")
-API='1764ce7c57f6d1d32c3c25a7a43bd6e6'
+API='OPENWEATHERMAP_API_KEY'
 url = (f"https://api.openweathermap.org/data/2.5/weather?q={c}&appid={API}&units=metric")
 
 res = r.get(url)
